@@ -361,3 +361,25 @@ footer {
   padding-left: 40%;
   padding-right: 43%;
 }
+
+.chip {
+  display: inline-block;
+  height: 25px;
+  padding-left: 10px;
+  font-size: 13px;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(189, 185, 185);
+  background-color: white;
+}
+
+.chip-div{
+  padding-top: 20px;
+  padding-left: 30%;
+}
+.chip-item{
+  padding-right: 20px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
