@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.elegant {
+  height: 54vh;
+  background: linear-gradient(to bottom, rgba(218, 46, 46, 0.7), rgba(230, 129, 21, 0.7)), url("/bg1.jpg");
+  background-size: contain;
+
+}
+
+.nav-bar {
+  display: flex;
+  list-style: none;
+  column-gap: 18px;
+  color: white;
+  padding-top: 10px;
+  font-size: 13px;
+  padding-right: 15%;
+}
+
+.nav-image {
+  padding-left: 22%;
+  padding-right: 35%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.active,
+.nav-link:hover {
+  color: orange;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  max-width: 550px;
+  margin: auto;
+  width: 50%;
+  padding-top: 120px;
+}
+
+.description-heading {
+  color: white;
+  font-size: 30px;
+}
+
+.description-content {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.description-btn {
+  background-color: #b81c1c;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  width: 130px;
+  padding: 10px 0;
+  margin: auto;
+  font-size: 12px;
+}
+
+.description-btn:hover {
+  cursor: pointer;
+  background-color: #640707;
+}
+
+.work {
+  padding-top: 80px;
+  padding-left: 22%;
+  padding-right: 22%;
+  background-color: white;
+  height: 75vh;
+}
+
+.work-heading {
+  color: purple;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+  padding-bottom: 15px;
+}
+
+.work-description {
+  color: gray;
+  text-align: center;
+  font-size: 12px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+}
+
+.conquer {
+  padding-top: 40px;
+}
+
+.conquer-quote {
+  color: orange;
+  font-size: 13px;
+  width: 50%;
+}
+
+.conquer-description {
+  padding-top: 10px;
+  color: gray;
+  font-size: 13px;
+  width: 50%;
+  padding-bottom: 10px;
+}
+
+.about-image {
+  float: right;
+  width: 45%;
+  object-fit: cover;
+}
+
+.learn-button {
+  cursor: pointer;
+  background: orange;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  display: inline-block;
+}
+
+i {
+  margin-left: 4px;
+}
+
+.services {
+  background-color: rgba(158, 150, 150, 0.171);
+  padding-top: 80px;
+  padding-left: 22%;
+  padding-right: 22%;
+  height: 15vh;
+}
+
+.services1 {
+  background-color: rgba(158, 150, 150, 0.171);
+  padding-top: 80px;
+  padding-left: 22%;
+  padding-right: 22%;
+  height: 80vh;
+}
+
+.services-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.service-tab {
+  background-color: white;
+  width: 31%;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.services-heading {
+  font-weight: bold;
+  font-size: 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.service-description {
+  color: gray;
+  font-size: 12px;
+  row-gap: 13px;
+}
+
+.service-icon {
+  color: orange;
+  font-size: 35px
+}
+
+.recent-work {
+  padding-top: 80px;
+  padding-left: 22%;
+  padding-right: 22%;
+  background-color: white;
+  padding-bottom: 50px;
+}
+
+.image-gallery {
+  font-size: 0;
+  padding-bottom: 80px;
+}
+
+.images {
+  width: 33%;
+}
+
+.review {
+  background-color: black;
+  padding: 50px 22% 30px 22%;
+
+
+}
+
+.review-content {
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.review-description {
+  color: white;
+  padding: 20px 7%;
+  font-size: 12px;
+
+}
+
+.author {
+  row-gap: -12px;
+}
+
+.review-author {
+  color: orange;
+  font-size: 12px;
+}
+
+.author-description {
+  font-size: 12px;
+}
+
+.dotting {
+  padding-top: 10px;
+}
+
+.first-dot {
+  height: 8px;
+  width: 8px;
+  margin-right: 7px;
+  background-color: rgb(235, 62, 134);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  margin-right: 7px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.contact {
+  padding-top: 80px;
+  padding-left: 22%;
+  padding-right: 22%;
+  background-color: white;
+  height: 75vh;
+}
+
+.contact-information {
+  width: 30%;
+  padding-top: 30px;
+}
+
+.contact-number {
+  color: gray;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.contact-title {
+  padding-left: 35px;
+}
+
+.contact-card {
+  padding: 10px;
+}
+
+.contact-form {
+  float: right;
+  width: 50%;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-description{
+  padding-top: 30px;
+}
+.form-fields-first {
+  padding-bottom: 7px;
+  margin-bottom: 30px;
+  width: 49%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 12px;
+
+}
+
+.form-fields-second {
+  padding-bottom: 7px;
+  margin-bottom: 30px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 12px;
+}
+
+.form-fields-third {
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 12px;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 11px;
+  font-weight: 200;
+}
+
+.tiles {
+  height: 1px;
+  background-color: #640707;
+  width: 40px;
+  float: right;
+
+}
+
+.tiles-first {
+  height: 1px;
+  background-color: rgba(172, 166, 166, 0.5);
+  width: 40px;
+  float: right;
+}
+
+.swipe-tiles {
+  padding-left: 40%;
+  padding-right: 43%;
+}
