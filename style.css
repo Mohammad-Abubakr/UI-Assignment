@@ -7,11 +7,13 @@
   font-family: "Poppins", sans-serif;
 }
 
+
 .elegant {
-  height: 54vh;
+  height: auto;
   background: linear-gradient(to bottom, rgba(218, 46, 46, 0.7), rgba(230, 129, 21, 0.7)), url("/bg1.jpg");
   background-size: contain;
-
+  padding-bottom: 40px;
+  overflow: auto;
 }
 
 .nav-bar {
@@ -44,14 +46,16 @@
   flex-direction: column;
   row-gap: 15px;
   max-width: 550px;
-  margin: auto;
+  margin: 0 auto;
   width: 50%;
   padding-top: 120px;
 }
 
+
 .description-heading {
   color: white;
   font-size: 30px;
+  line-height: 37px;
 }
 
 .description-content {
@@ -79,12 +83,13 @@
   background-color: #640707;
 }
 
+
+
 .work {
-  padding-top: 80px;
-  padding-left: 22%;
-  padding-right: 22%;
+  padding: 80px 22% 50px 22%;
   background-color: white;
-  height: 75vh;
+  height: auto;
+
 }
 
 .work-heading {
@@ -106,20 +111,23 @@
 
 .conquer {
   padding-top: 40px;
+
 }
 
 .conquer-quote {
   color: orange;
   font-size: 13px;
   width: 50%;
+
 }
 
 .conquer-description {
   padding-top: 10px;
-  color: gray;
+  color: rgb(168, 163, 163);
   font-size: 13px;
   width: 50%;
-  padding-bottom: 10px;
+  padding-bottom: 25px;
+  font-weight: 300;
 }
 
 .about-image {
@@ -141,20 +149,23 @@ i {
   margin-left: 4px;
 }
 
+
+
 .services {
   background-color: rgba(158, 150, 150, 0.171);
   padding-top: 80px;
   padding-left: 22%;
   padding-right: 22%;
-  height: 15vh;
+  height: auto;
 }
 
 .services1 {
   background-color: rgba(158, 150, 150, 0.171);
-  padding-top: 80px;
+  padding-top: 30px;
   padding-left: 22%;
   padding-right: 22%;
-  height: 80vh;
+  height: auto;
+  padding-bottom: 30px;
 }
 
 .services-section {
@@ -180,7 +191,16 @@ i {
   padding-top: 10px;
 }
 
+.under-tiles {
+  height: 1px;
+  background-color: black;
+  width: 60px;
+  margin: 0 auto;
+
+}
+
 .service-description {
+  padding-top: 10px;
   color: gray;
   font-size: 12px;
   row-gap: 13px;
@@ -300,9 +320,10 @@ i {
   flex-direction: column;
 }
 
-.contact-description{
+.contact-description {
   padding-top: 30px;
 }
+
 .form-fields-first {
   padding-bottom: 7px;
   margin-bottom: 30px;
@@ -342,19 +363,20 @@ footer {
   font-weight: 200;
 }
 
-.tiles {
-  height: 1px;
-  background-color: #640707;
-  width: 40px;
-  float: right;
-
-}
 
 .tiles-first {
   height: 1px;
   background-color: rgba(172, 166, 166, 0.5);
   width: 40px;
   float: right;
+}
+
+.tiles {
+  height: 1px;
+  background-color: #640707;
+  width: 40px;
+ float: right;
+
 }
 
 .swipe-tiles {
@@ -374,12 +396,100 @@ footer {
   background-color: white;
 }
 
-.chip-div{
+.chip-div {
   padding-top: 20px;
   padding-left: 30%;
 }
-.chip-item{
+
+.chip-item {
   padding-right: 20px;
   letter-spacing: 1px;
   font-weight: 100;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .elegant {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .description {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 80px;
+  }
+
+  .nav-image {
+    padding: 5px 10px;
+  }
+
+  .description-heading {
+    text-align: center;
+  }
+
+  .work {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .work-description {
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+
+  .swipe-tiles {
+    padding-left: 30%;
+    padding-right: 35%;
+  }
+
+  .conquer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .conquer-quote {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .about-image {
+    width: 100%;
+    float: none;
+    padding-top: 40px;
+    order: 3;
+  }
+
+  .conquer-description {
+    width: 100%;
+    order: 1;
+  }
+
+  .learn-button {
+    order: 2;
+    width: 120px;
+  }
+
+  .services {
+    padding-right: 20px;
+    padding-left: 20px;
+
+  }
+
+  .services1 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .service-tab {
+    width: 100%;
+  }
 }
