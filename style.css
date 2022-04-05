@@ -197,6 +197,8 @@ i {
   padding-top: 10px;
 }
 
+
+
 .under-tiles {
   height: 1px;
   background-color: black;
@@ -214,7 +216,7 @@ i {
 
 .service-icon {
   color: orange;
-  font-size: 35px
+  font-size: 30px;
 }
 
 .recent-work {
@@ -336,6 +338,10 @@ i {
   padding-top: 30px;
 }
 
+.contact-icon {
+  color: rgb(171, 47, 82)
+}
+
 .form-fields-first {
   padding-bottom: 7px;
   margin-bottom: 30px;
@@ -423,12 +429,27 @@ footer {
   color: white;
 }
 
+.footer-icon {
+  color: white;
+  font-size: 10px
+}
+
+.container {
+  margin: 0 auto;
+  width: 1440px;
+  position: relative;
+}
+
 
 @media screen and (max-width: 768px) {
 
   .elegant {
     background-repeat: no-repeat;
     background-size: 100% 100%;
+  }
+
+  .container {
+    width: 100%;
   }
 
   .nav-link {
@@ -627,6 +648,7 @@ footer {
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
+
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 768px) {
@@ -795,5 +817,9 @@ footer {
   .color {
     background-repeat: no-repeat;
     background-size: 100% 100%;
+  }
+
+  .container {
+    width: 100%;
   }
 }
