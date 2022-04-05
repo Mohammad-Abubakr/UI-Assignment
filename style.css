@@ -10,10 +10,15 @@
 
 .elegant {
   height: auto;
-  background: linear-gradient(to bottom, rgba(218, 46, 46, 0.7), rgba(230, 129, 21, 0.7)), url("/bg1.jpg");
+  background: linear-gradient(to bottom, rgba(195, 97, 108, 0.95), rgba(230, 129, 21, 0.95)), url("/bg1.jpg");
   background-size: contain;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
   overflow: auto;
+}
+
+.hamburger {
+  display: none;
+
 }
 
 .nav-bar {
@@ -67,7 +72,7 @@
 }
 
 .description-btn {
-  background-color: #b81c1c;
+  background-color: rgb(171, 47, 82);
   color: white;
   border: none;
   outline: none;
@@ -89,11 +94,11 @@
   padding: 80px 22% 50px 22%;
   background-color: white;
   height: auto;
-
+  padding: 80px 22% 50px 22%;
 }
 
 .work-heading {
-  color: purple;
+  color: rgb(171, 47, 82);
   text-align: center;
   font-size: 30px;
   font-weight: 200;
@@ -101,7 +106,7 @@
 }
 
 .work-description {
-  color: gray;
+  color: rgb(163, 163, 163);
   text-align: center;
   font-size: 12px;
   padding-left: 100px;
@@ -118,6 +123,7 @@
   color: orange;
   font-size: 13px;
   width: 50%;
+  font-weight: 700;
 
 }
 
@@ -138,7 +144,7 @@
 
 .learn-button {
   cursor: pointer;
-  background: orange;
+  background: rgb(255, 175, 83);
   color: white;
   border: none;
   padding: 8px 10px;
@@ -146,7 +152,7 @@
 }
 
 i {
-  margin-left: 4px;
+  margin-left: 0px;
 }
 
 
@@ -201,7 +207,7 @@ i {
 
 .service-description {
   padding-top: 10px;
-  color: gray;
+  color: rgb(165, 165, 165);
   font-size: 12px;
   row-gap: 13px;
 }
@@ -229,11 +235,16 @@ i {
 }
 
 .review {
-  background-color: black;
   padding: 50px 22% 30px 22%;
-
-
+  background-size: contain;
+  background-color: rgba(0, 0, 0, 0.9);
 }
+
+.color {
+  background-image: url('bg1.jpg');
+  background-size: contain;
+}
+
 
 .review-content {
   text-align: center;
@@ -271,7 +282,7 @@ i {
   height: 8px;
   width: 8px;
   margin-right: 7px;
-  background-color: rgb(235, 62, 134);
+  background-color: rgb(171, 47, 82);
   border-radius: 50%;
   display: inline-block;
 }
@@ -290,7 +301,8 @@ i {
   padding-left: 22%;
   padding-right: 22%;
   background-color: white;
-  height: 75vh;
+  height: auto;
+  padding-bottom: 80px;
 }
 
 .contact-information {
@@ -305,7 +317,7 @@ i {
 }
 
 .contact-title {
-  padding-left: 35px;
+  padding-left: 30px;
 }
 
 .contact-card {
@@ -375,7 +387,7 @@ footer {
   height: 1px;
   background-color: #640707;
   width: 40px;
- float: right;
+  float: right;
 
 }
 
@@ -385,26 +397,30 @@ footer {
 }
 
 .chip {
-  display: inline-block;
-  height: 25px;
-  padding-left: 10px;
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
   font-size: 13px;
   border-radius: 25px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(189, 185, 185);
+  border: 1px dotted rgb(189, 185, 185);
   background-color: white;
 }
 
 .chip-div {
-  padding-top: 20px;
-  padding-left: 30%;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .chip-item {
-  padding-right: 20px;
-  letter-spacing: 1px;
-  font-weight: 100;
+  padding: 5px 35px;
+  border-radius: 25px;
+}
+
+.chip>span:first-of-type {
+  background-color: rgb(171, 47, 82);
+  color: white;
 }
 
 
@@ -419,6 +435,20 @@ footer {
     display: none;
   }
 
+  .nav-bar {
+    padding: 0%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: inline;
+    padding-top: 15px;
+    padding-right: 20px;
+
+  }
+
+
   .description {
     width: 100%;
     max-width: 100%;
@@ -428,6 +458,7 @@ footer {
   }
 
   .nav-image {
+    padding-right: 0%;
     padding: 5px 10px;
   }
 
@@ -436,8 +467,10 @@ footer {
   }
 
   .work {
+
     padding-right: 20px;
     padding-left: 20px;
+    padding-bottom: 100px;
   }
 
   .work-description {
@@ -487,9 +520,280 @@ footer {
   .services1 {
     padding-right: 20px;
     padding-left: 20px;
+    padding-bottom: 100px;
   }
 
   .service-tab {
     width: 100%;
+  }
+
+  .recent-work {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .chip-div {
+    padding: 0;
+  }
+
+  .chip {
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-style: none;
+    width: 100%;
+  }
+
+  .chip-item {
+    padding: 5px 10px;
+    border-radius: 0;
+  }
+
+  .chip>span:first-of-type {
+    background-color: purple;
+    color: white;
+  }
+
+  .images {
+    width: 100%;
+  }
+
+  .review {
+    padding: 50px 10px 30px 10px;
+  }
+
+  .review-content {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .review-description {
+    padding: 15px 0px 15px 0px;
+  }
+
+  .contact {
+    padding-right: 20px;
+    padding-left: 20px;
+
+  }
+
+  .contact-description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-form {
+    float: none;
+    width: 100%;
+    order: 2;
+  }
+
+  .form-fields-first {
+    width: 100%;
+  }
+
+  .contact-information {
+    width: 100%;
+    padding-top: 0px;
+    order: 1;
+  }
+
+  .contact-card {
+    padding-left: 2px;
+
+  }
+
+  .work-heading {
+    font-size: 20px;
+  }
+
+  .tiles {
+    width: 20px;
+
+  }
+
+  .tiles-first {
+    width: 20px;
+  }
+
+  .swipe-tiles {
+    padding-left: 0;
+    padding-right: 42%;
+  }
+
+  .color {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+
+  .elegant {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .nav-bar {
+    padding: 0%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: inline;
+    padding-top: 15px;
+    padding-right: 20px;
+
+  }
+
+  .description {
+    width: 100%;
+    max-width: 80%;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 80px;
+  }
+
+  .nav-image {
+    padding: 5px 0px;
+    padding-right: 30%;
+    padding-left: 10px;
+  }
+
+  .description-heading {
+    text-align: center;
+  }
+
+  .work {
+
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 100px;
+  }
+
+  .work-description {
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+
+  .swipe-tiles {
+    padding-left: 30%;
+    padding-right: 35%;
+  }
+
+  .conquer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .conquer-quote {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .about-image {
+    width: 100%;
+    float: none;
+    padding-top: 40px;
+    order: 3;
+  }
+
+  .conquer-description {
+    width: 100%;
+    order: 1;
+  }
+
+  .learn-button {
+    order: 2;
+    width: 120px;
+  }
+
+  .services {
+    padding-right: 20px;
+    padding-left: 20px;
+
+  }
+
+  .services1 {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 100px;
+  }
+
+  .service-tab {
+    width: 40%;
+  }
+
+  .recent-work {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .chip-div {
+    padding: 0;
+  }
+
+  .chip {
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-style: none;
+    width: 60%;
+  }
+
+  .chip-item {
+    padding: 5px 10px;
+    border-radius: 0;
+  }
+
+  .chip>span:first-of-type {
+    background-color: purple;
+    color: white;
+  }
+
+  .images {
+    width: 50%;
+  }
+
+  .review {
+    padding: 50px 10px 30px 10px;
+  }
+
+  .review-content {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .review-description {
+    padding: 15px 0px 15px 0px;
+  }
+
+  .contact {
+    padding-right: 20px;
+    padding-left: 20px;
+
+  }
+
+  .work-heading {
+    font-size: 20px;
+  }
+
+  .swipe-tiles {
+    padding-left: 0;
+    padding-right: 45%;
+  }
+
+  .color {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 }
